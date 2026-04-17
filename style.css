@@ -1,0 +1,127 @@
+/* Animaciones individuales */
+                h1{
+                font-family: "Montserrat", sans-serif;
+                font-size: 50px;
+                text-align: center;    
+                font-weight: 600px;
+                color: black;
+                }
+               h2{
+                font-family: "Montserrat", sans-serif;
+                font-size: 30px;
+                text-align: left;    
+                font-weight: 100px;
+                color: brown;
+                margin-left: 650px;
+                }
+                h3{
+                font-family: "Montserrat", sans-serif;
+                font-size: 30px;
+                text-align: left;    
+                font-weight: 100px;
+                color: rgb(26, 20, 202);
+                margin-left: 650px;
+                }
+                 h4{
+                font-family: "Montserrat", sans-serif;
+                font-size: 30px;
+                text-align: left;    
+                font-weight: 100px;
+                color: aquamarine;
+                margin-left: 650px;
+                }
+                 h5{
+                font-family: "Montserrat", sans-serif;
+                font-size: 30px;
+                text-align: left;    
+                font-weight: 100px;
+                color: blueviolet;
+                margin-left: 650px;
+                }
+
+.snoopymover {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 72, 255);
+        color: rgb(0, 0, 0);
+        margin-bottom: 10px;
+        margin-left: 650px;
+        animation: moverAnim 3s infinite ease-in-out;
+    }
+ 
+    .snoopyescalar {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 650px;
+        animation: escalarAnim 3s infinite ease-in-out;
+    }
+ 
+    .snoopyrotar {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(89, 255, 0);
+        color: rgb(0, 0, 0);
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 650px;
+        animation: rotarAnim 3s infinite linear;
+    }
+ 
+    .color {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(89, 255, 0);
+        color: rgb(0, 0, 0);
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 650px;
+        animation: colorAnim 3s infinite ease-in-out;
+    }
+ 
+    /* Keyframes */
+    @keyframes moverAnim {
+        0% {
+            transform: translateX(0);
+        }
+ 
+        100% {
+            transform: translateX(150px);
+        }
+    }
+ 
+    @keyframes escalarAnim {
+        0% {
+            transform: scale(1);
+        }
+ 
+        100% {
+            transform: scale(1.5);
+        }
+    }
+ 
+    @keyframes rotarAnim {
+        0% {
+            transform: rotate(0deg);
+        }
+ 
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+ 
+    @keyframes colorAnim {
+        0% {
+            background-color: crimson;
+        }
+ 
+        100% {
+            background-color: dodgerblue;
+        }
+    }
